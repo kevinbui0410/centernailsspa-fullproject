@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Center Nails",
+    "slug": "centernails-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF69B4"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.centernails.mobile",
+      "merchantIdentifier": "merchant.com.centernails.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF69B4"
+      },
+      "package": "com.centernails.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.centernails.mobile",
+          "enableAndroidPayments": true
+        }
+      ]
+    ],
+    "sdkVersion": "53.0.0"
+  }
+}
